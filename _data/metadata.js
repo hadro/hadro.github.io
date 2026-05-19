@@ -7,5 +7,6 @@ export default {
 		name: "Josh Hadro",
 		email: "joists-75.bouquet@icloud.com",
 		url: "https://hadro.github.io/"
-	}
+	},
+	goatcounter: "hadro-github-io"
 }
