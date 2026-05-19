@@ -12,4 +12,7 @@ Before that I was the first Managing Director of the [IIIF Consortium](https://i
 
 Prior to that, I worked at the New York Public Library, as [Deputy Director of NYPL Labs](https://www.nypl.org/collections/labs), and as Associate Director of Digital Policy, among other roles. 
 
+Find me on [LinkedIn](https://www.linkedin.com/feed/) if you're interested in the details.
+
 Everything here is purely my own opinion, and does not reflect the opinion of my employer, past or present.
+
