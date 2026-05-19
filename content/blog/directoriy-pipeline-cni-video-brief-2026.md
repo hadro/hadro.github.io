@@ -9,6 +9,7 @@ tags:
   - NER
   - OCR
   - digitization
+  - CNI
 ---
 
 The folks at CNI recently saw a message I wrote on a private email list about the work I'm doing on my "Directory Pipeline," and they very graciously invited me to record a brief presentation on it for the Spring 2026 CNI video briefs series.
