@@ -1,6 +1,6 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -8,9 +8,9 @@
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+	--color-gray-90: #2a2a2a;
 
-	--background-color: #fff;
+	--background-color: #fdfcf9;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -27,11 +27,11 @@
 		--color-gray-90: #dad8d8;
 
 		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link: #9ab8d6;
+		--text-color-link-active: #c9a3b7;
+		--text-color-link-visited: #b89ec9;
 
-		--background-color: #15202b;
+		--background-color: #1a1816;
 	}
 }
 
@@ -57,7 +57,9 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	max-width: 38em;
+	font-size: 1.0625rem; /* 17px — slightly larger for serif body */
+	line-height: 1.65;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -96,11 +98,43 @@ p:last-child {
 	margin-bottom: 0;
 }
 p {
-	line-height: 1.5;
+	line-height: 1.65;
 }
 
 li {
-	line-height: 1.5;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+	line-height: 1.25;
+	margin-top: 1.8em;
+	margin-bottom: 0.5em;
+	font-weight: 600;
+	letter-spacing: -0.005em;
+}
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+h4 { font-size: 1rem; }
+
+blockquote {
+	margin: 1.2em 0;
+	padding-left: 1em;
+	border-left: 2px solid var(--color-gray-20);
+	color: var(--color-gray-90);
+	font-style: italic;
+}
+blockquote p {
+	margin: 0.5em 0;
+}
+
+main img + em,
+main img + p > em:only-child {
+	display: block;
+	font-size: 0.875em;
+	color: var(--color-gray-90);
+	text-align: center;
+	margin-top: 0.4em;
 }
 
 a[href] {
