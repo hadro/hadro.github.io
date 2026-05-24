@@ -4,10 +4,10 @@ date: 2026-05-06
 description: "A 20 minute talk on my 'Directory Pipeline' set of tools."
 tags:
   - directory pipeline
-  - LLMs
-  - Entity extraction
+  - llms
+  - entity extraction
   - NER
-  - OCR
+  - ocr
   - digitization
   - CNI
 ---
