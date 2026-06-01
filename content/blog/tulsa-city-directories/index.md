@@ -55,7 +55,7 @@ When the piece was published in 2021, I wrote this on Twitter (You can see a com
 
 > Now ... can you imagine if the team of authors and data journalists had also made available the tools/scripts they used to georeference the Sanborn insurance maps, & extract 3D features from the outlines, & parse city directory jpgs to get from error-filled OCR to super clean name/address/profession data?
 
-> Or just documented the tools/processes used a bit more than is described in the methodology? Of course, I recognize it's a ton more work to do all that; no doubt this work was done w/o generalization front of mind, & I know it's not totally fair to have that expectation here [See postcript below: they did later release the underlying data, though no tools or scripts].
+> Or just documented the tools/processes used a bit more than is described in the methodology? Of course, I recognize it's a ton more work to do all that; no doubt this work was done w/o generalization front of mind, & I know it's not totally fair to have that expectation here [See postscript below: they did later release the underlying data, though no tools or scripts].
 
 > (and I don't say that to take away from or diminish the extraordinary research and journalism on top of it all that went into creating the larger work, just pointing out that the kinds of sources will look familiar to tons of folks working with GLAM collections)
 
@@ -87,7 +87,7 @@ I am not a lawyer, but I am reasonably confident little or nothing in the reposi
 
 ## The road to creating the Tulsa City Directory Data Explorer
 
-Back in 2014-2017, I was in the NYPL Labs division at the New York Public Library. I worked a bit on the [NYPL Space/Time Directory](https://www.nypl.org/digital-research/projects/nyc-spacetime-directory). I mention that to put in context the fact that what they accomplished with this the article on the devastation wraught by the Tulsa Race Massacre is like the ideal of the kind of thing we were hoping to make possible for NYC contexts with the various tools and products we developed in NYPL Labs. 
+Back in 2014-2017, I was in the NYPL Labs division at the New York Public Library. I worked a bit on the [NYPL Space/Time Directory](https://www.nypl.org/digital-research/projects/nyc-spacetime-directory). I mention that to put in context the fact that what they accomplished with the article on the devastation wrought by the Tulsa Race Massacre is like the ideal of the kind of thing we were hoping to make possible for NYC contexts with the various tools and products we developed in NYPL Labs. 
 
 Since that NYPL Labs era, the idea of being able to work with any of the many thousands of city directories and business directories published in nearly every city around the country for the last 150 years or so has been a borderline obsession for me. 
 
@@ -106,4 +106,4 @@ So here's what I did to create the data explorer for the 1921 Polk-Hoffhine Dire
 
 --- 
 
-I get why the data journalism team at the New York Times didn't make the publication of their data, scripts, and tools a primary focus of their piece. I understand that journalism has different priorities and methods to digital scholarship and librarianship. Fortunately, when the recent anniversary of the Tulsa Race Massacre reminded me of my original frustration with the article, I was already building the tool I have wanted to see in the world, and which helped me put this data explorer together.
+I get why the data journalism team at the New York Times didn't make the publication of their data, scripts, and tools a primary focus of their piece. I understand that journalism has different priorities and methods to digital scholarship and librarianship. Fortunately, when the recent anniversary of the Tulsa Race Massacre reminded me of my original frustration with the article, I was already building the tool I wanted to see in the world, and which helped me put this data explorer together.
