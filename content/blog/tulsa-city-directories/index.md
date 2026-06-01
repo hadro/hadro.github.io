@@ -67,7 +67,7 @@ I found out a few months later that the [NYTimes did publish the underlying data
 
 ## The copyright piece I've been stewing on as well
 
-Another thing that annoyed me at the time: They put a copyright notice as the repository license file, which I believe is misleading at best, and [copyfraud](https://en.wikipedia.org/wiki/Copyfraud) at worst.
+Another thing that annoyed me at the time: They put a copyright notice as the repository license file, which I believe may be either misleading or incorrect.
 
 > Copyright 2021 by The New York Times Company 
 
@@ -83,15 +83,7 @@ this license. Anyone seeking to use the database for other purposes is required
 to contact The New York Times Company at tulsa-data@nytimes.com to obtain
 permission.
 
-I am not a lawyer, but I am reasonably confident little or nothing in the repository can be copyrighted given that it is all factual information derived from public domain sources, with very little in the way of original arrangement, which I think means it falls squarely within the findings of [Feist Publications, Inc. v. Rural Telephone Service Co.](https://en.wikipedia.org/wiki/Feist_Publications,_Inc._v._Rural_Telephone_Service_Co.).
-
-I'm less familiar with the nuances of copyright related to 3D files and geospatial files, so I'll opine less there, but I'm quite confident that the listings in the 1921 Tulsa city directory never had copyright attach to them, and they certainly don't have any copyright given that more than 100 years has elapsed since they were published, and I'm likewise quite confident that there's isn't a way to publish a strict subset of those public domain city directory entries to a CSV file in 2021 and have it be some new copyrightable thing.
-
-It's very plausible that the NYTimes team were required to do so by some institutional guideline, but whatver the reason it feels doubly insulting to try to claim copyright in data derived from public domain data, and then try to claim that "Anyone may copy, distribute, and display the files, or any part thereof, and make derivative works based on it, provided (a) any such use is for non-commercial purposes only and (b) credit is given to The New York Times in any public display or publication derived in part or in full from the files." It's the kind of license writing that makes it seem like they're being cool and benevolent and permissive but is still in fact asserting control over the character and purposes of the derivative use of public domain data.
-
-Even if they could claim copyright in some of the data (which, as I've said, I don't think they can), you have fair use rights! (In the US, at least.)
-
-Any copyright scholars who see this, please corect me if I'm wrong.
+I am not a lawyer, but I am reasonably confident little or nothing in the repository -- especially the parts related to the city directory -- can be copyrighted given that it is all factual information derived from public domain sources, with very little in the way of original arrangement.
 
 ## The road to creating the Tulsa City Directory Data Explorer
 
