@@ -6,6 +6,10 @@ const eleventyNavigation = {
 ---
 # About
 
+The projects and opinions here are personal projects and opinions, unless explicitly stated otherwise.
+
+## Professional stuff
+
 I am currently the Acting Chief of the [Digital Innovation Division at the Library of Congress (better known as LC Labs)](https://labs.loc.gov/).
 
 Before that I was the first Managing Director of the [IIIF Consortium](https://iiif.io/).
@@ -14,5 +18,5 @@ Prior to that, I worked at the New York Public Library, as [Deputy Director of N
 
 Find me on [LinkedIn](https://www.linkedin.com/feed/) if you're interested in the details.
 
-Everything here is purely my own opinion, and does not reflect the opinion of my employer, past or present.
+Again: everything here is purely my own opinion, and does not reflect the opinion of my employer, past or present.
 
