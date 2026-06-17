@@ -14,10 +14,10 @@ tags:
 [![Screenshot of the about page for the Tulsa 1921 City Directory data explorer](img/screenshot.png)](https://hadro.github.io/tulsa-city-directories/1921#about)
 
 
-Here is a story about how being annoyed for 5 years by a wonderful and moving [New York Times data journalism piece](https://www.nytimes.com/interactive/2021/05/24/us/tulsa-race-massacre.html?unlocked_article_code=1.lFA.e3VE.V5pm6dDzVBzf&smid=url-share) resulted in the creation of [a data explorer for the 1921 Tulsa City Directory](https://hadro.github.io/tulsa-city-directories/1921).
+Here is a story about how being annoyed for 5 years by a wonderful and moving [New York Times data journalism piece](https://www.nytimes.com/interactive/2021/05/24/us/tulsa-race-massacre.html?unlocked_article_code=1.lFA.e3VE.V5pm6dDzVBzf&smid=url-share) resulted in the creation of [a data explorer for the 1921 Tulsa City Directory](https://hadro.github.io/tulsa-city-directories/1921#about).
 
 If you don’t care about the backstory and just want a useful public domain resource, here is the data explorer for the Polk-Hoffhine Directory Co.'s Tulsa City Directory 1921, published just weeks before the Tulsa Race Massacre in late May/early June 1921:
--  **<https://hadro.github.io/tulsa-city-directories/1921>**
+-  **<https://hadro.github.io/tulsa-city-directories/1921#about>**
 
 And here are the underlying CSVs for the 1921 and 1922 City Directories, after parsing through them with a LLM-assisted optical character recognition (OCR) and named entity recognition (NER) pipelines:
 
@@ -26,7 +26,7 @@ And here are the underlying CSVs for the 1921 and 1922 City Directories, after p
 
 Any possible copyrights have expired, so the underlying city directories are in the public domain, so therefore all of this data is in the public domain with no possible copyright restrictions.
 
-While there are almost certainly OCR errors and potentially  data extraction errors, I still believe this is a useful dataset for anyone looking into the time period, or anyone interested in engaging with documentary evidence of a vibrant Black social and business community that was all but extinguished in the 1921 Tulsa Race Massacre. It is the output of a tool I’ve been building called the “[Directory Pipeline](https://github.com/hadro/directory-pipeline/).”
+/While there are almost certainly OCR errors and potentially  data extraction errors, I still believe this is a useful dataset for anyone looking into the time period, or anyone interested in engaging with documentary evidence of a vibrant Black social and business community that was all but extinguished in the 1921 Tulsa Race Massacre. It is the output of a tool I’ve been building called the “[Directory Pipeline](https://github.com/hadro/directory-pipeline/).”
 
 I've compared this to the [dataset released by the New York Times](https://github.com/nytimes/tulsa-1921-data) (see below for the backstory), and all of the entries they identified are also identified by the output of the pipeline tools. While it's a little tricky to fully replicate their work because the methodology section often offers only broad strokes, I feel confident that this is as accurate a representation of the underlying city directory data as is represented in their piece (there are even some names and addresses that I have found that were likely Greenwood residents that don't appear in their data, but again because they don't specify their exact methods it's hard to be 100% sure).
 
