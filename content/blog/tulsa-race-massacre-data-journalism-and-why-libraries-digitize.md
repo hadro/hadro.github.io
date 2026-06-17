@@ -3,7 +3,7 @@ title: "The Tulsa Race Massacre, Data Journalism, and Why Libraries Digitize"
 date: 2021-05-25
 description: "Reflections on the NYT Tulsa Race Massacre piece and how it made use of digitized public domain Sanborn maps, city directories, and archival photos."
 tags:
-  - tulsa race massare
+  - tulsa race massacre
   - journalism
   - data journalism
   - digitization
