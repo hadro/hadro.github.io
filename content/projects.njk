@@ -1,0 +1,28 @@
+---js
+const eleventyNavigation = {
+	key: "Projects",
+	order: 2
+};
+
+const title = "Projects";
+const description = "Data explorers, visualizations, and tools built from digitized collections and open cultural heritage data.";
+---
+<h1>Projects</h1>
+
+<ul class="projectlist">
+{%- for project in projects %}
+	<li class="projectlist-item">
+		{%- if project.image %}
+		<a href="{{ project.url }}" tabindex="-1" aria-hidden="true" class="projectlist-thumb">
+			<img src="{{ project.image }}" alt="{{ project.alt }}">
+		</a>
+		{%- endif %}
+		<a href="{{ project.url }}" class="projectlist-link">{{ project.title }}</a>
+		{%- if project.year %}<span class="projectlist-year">{{ project.year }}</span>{% endif %}
+		<p class="projectlist-description">{{ project.description }}</p>
+		{%- if project.post %}
+		<p class="projectlist-meta"><a href="{{ project.post }}">Read the write-up</a></p>
+		{%- endif %}
+	</li>
+{%- endfor %}
+</ul>

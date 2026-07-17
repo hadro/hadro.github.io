@@ -1,5 +1,5 @@
 ---
-title: "How Being Annoyed for 5 Years Led to a Data Explorer of the Lives and Businesses Destroyed by the Tulsa Race Massacre"
+title: "What Led to a Data Explorer of the Lives and Businesses Destroyed by the Tulsa Race Massacre"
 date: 2026-05-31
 description: "A story about getting frustrated with a wonderful and moving New York Times data journalism piece, with an end result being an explorer tool for a 1921 Tulsa City Directory, the output of a tool I’ve built called “Directory Pipeline"
 tags:
