@@ -330,3 +330,45 @@ header {
 	margin-right: 1em;
 }
 
+/* Projects */
+.projectlist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.projectlist-item {
+	margin-bottom: 2.5em;
+}
+.projectlist-thumb {
+	display: block;
+	margin-bottom: .5em;
+	border: 1px solid var(--color-gray-50);
+	background-color: #fff;
+}
+.projectlist-thumb img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: contain;
+}
+.projectlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.projectlist-year {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+	margin-left: .5em;
+	word-spacing: -0.5px;
+}
+.projectlist-description {
+	margin: .25em 0 0;
+}
+.projectlist-meta {
+	font-size: 0.8125em; /* 13px /16 */
+	margin: .25em 0 0;
+}
+
