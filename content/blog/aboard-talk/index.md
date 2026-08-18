@@ -2,7 +2,6 @@
 title: "Looking at Pictures of Books Is Not the Same as Reading a Book"
 date: 2026-08-17
 description: "A write-up of the talk I gave at Aboard's offices on July 28, 2026, about the Directory Pipeline, meta-prompting, two-pass OCR, and why digitized collections deserve better front doors."
-draft: true
 tags:
   - directory pipeline
   - talks
