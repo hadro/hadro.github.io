@@ -10,7 +10,7 @@ The projects and opinions here are personal projects and opinions, unless explic
 
 ## Professional stuff
 
-I am currently the Acting Chief of the [Digital Innovation Division at the Library of Congress (better known as LC Labs)](https://labs.loc.gov/).
+I work on Digital Strategy for the Library of Congress, and I recently concluded a stint as Acting Chief of the [Digital Innovation Division at the Library of Congress (better known as LC Labs)](https://labs.loc.gov/).
 
 Before that I was the first Managing Director of the [IIIF Consortium](https://iiif.io/).
 
