@@ -91,7 +91,7 @@ Back in 2014-2017, I was in the NYPL Labs division at the New York Public Librar
 
 Since that NYPL Labs era, the idea of being able to work with any of the many thousands of city directories and business directories published in nearly every city around the country for the last 150 years or so has been a borderline obsession for me. 
 
-And in recent months, I think it's closer to doable than it's ever been before. I recently recorded [a short video on a project I've been working on called the Directory Pipeline](https://hadro.github.io/blog/directoriy-pipeline-cni-video-brief-2026/), and I explain more about the goals and elements there if you're interested. 
+And in recent months, I think it's closer to doable than it's ever been before. I recently recorded [a short video on a project I've been working on called the Directory Pipeline](/blog/directory-pipeline-cni-video-brief-2026/), and I explain more about the goals and elements there if you're interested. 
 
 So here's what I did to create the data explorer for the 1921 Polk-Hoffhine Directory Co.'s Tulsa City Directory: 
 - I created a IIIF manifest that combines all the IIIF images made available for the [City Directory files](https://digitalcollections.tulsalibrary.org/digital/collection/p15020coll12/id/2857/rec/2) (the pages are already served by IIIF, but there was no existing manifest, so I just created a placeholder to use as input in the Directory Pipeline)
