@@ -1,6 +1,7 @@
 ---
 title: "Dream Project: Brooklyn Brewing History and the Directory Pipeline"
 date: 2020-10-30
+draft: true
 description: "A 2020 thread about dreaming of a project to map Brooklyn's brewing history, and the 2026 threads where I finally built it."
 tags:
   - brooklyn

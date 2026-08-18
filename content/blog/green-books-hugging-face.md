@@ -11,7 +11,7 @@ tags:
   - nypl
   - iiif
   - ocr
-  - NER
+  - ner
   - open data
 ---
 
