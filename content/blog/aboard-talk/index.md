@@ -49,7 +49,7 @@ Two parts of that I think are genuinely new in the digital library context.
 
 But *you* are never going to write as good a prompt for that specific volume as the model can write for itself, after looking at a handful of representative pages. It's ok! People are bad at this; we focus on the wrong things. So the human job in my pipeline is to pick five or ten good sample pages — the key, the abbreviations table, the average page, the weird layouts, the ones with advertisements in the middle of the entries — and the model's job is to design its own OCR prompt and its own data extraction schema from those samples.
 
-![Slide showing a generated meta-prompt for the National Directory of Morticians, instructing the model to extract discrete records from the transcribed text](img/morticians-meta-prompt.webp)
+![Two slides combined: a generated meta-prompt for the National Directory of Morticians, telling the model to extract discrete records from the transcribed text, followed by the entry schema it wrote for itself — state, city, county, city_population, business_name, and personnel](img/morticians-meta-prompt.webp)
 
 **Two-pass consensus OCR.** The newer LLM-based tools produce near-flawless text but can't give you reliable bounding boxes. The older tools (Tesseract, Surya) give you bounding boxes but higher error rates on the text. So the pipeline runs both and aligns them: old tech for coordinates, LLMs for characters.
 
