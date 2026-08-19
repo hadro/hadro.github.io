@@ -195,4 +195,4 @@ In conclusion:
 I think you should all go find an item. The source code for the Directory Pipeline is open. Let's have a world where everybody's got a data viewer for their own weird special interests -- what a beautiful world that would be!
 
 
-*My thanks to Paul Ford and everyone at Aboard for hosting, and to everyone who came out and expressed interest and asked questions.*
+*My thanks to Paul Ford and Molly McArdle and everyone at Aboard for hosting, and to everyone who came out and expressed interest and asked questions.*
