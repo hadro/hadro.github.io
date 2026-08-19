@@ -25,7 +25,7 @@ What follows is a write-up of most of what I said, cleaned up and reorganized a 
 
 ## The thing I'm trying to get from, and the thing I'm trying to get to
 
-Here is a digitized book. We, as a sector, have digitized millions like this. This one is *Tovey's Official Brewers' and Maltsters' Directory of the United States and Canada*, 1915, from the New York Public Library.
+Here is a digitized book. We, as a sector, have digitized millions like this. This one is *Tovey's Official Brewers' and Maltsters' Directory of the United States and Canada*, 1915, from the New York Public Library. (In general, for this project, when I say "book" I usually mean a directory-like volume, or something with repeated entry structures -- city directories, travel guides, gazetteers, etc.)
 
 ![A digitized 1915 brewery directory in a digital collections viewer, shown as a two-page spread of scanned images](img/digital-collections-viewer.webp)
 
@@ -114,7 +114,7 @@ This is the project I've wanted to finish for a decade, and that made me want to
 
 Back in 2014, when I oversaw the digital imaging unit and the metadata services units at NYPL, Maira Liriano at the Schomburg Center proposed digitizing NYPL's nearly complete run of the Green Books. We did it, and put them online in the public domain. That's the system working! The Green Books were already well known in many circles, and were already well researched in various Black scholarship domains, but making almost the entire run of the Green Books was still an important means of giving many more people a point of entry.
 
-About a year later Brian Foo, then at NYPL Labs, built [Navigating the Green Book](https://beefoo.github.io/greenbook-map/) as a way of demonstrating the kinds of things that could be done with NYPL's Public Domain release. The interface he built on top of the Green Books is essentially Google Maps, but routed only through Green Book listings -- putting a modern interface on top of these very specific artifacts of Jim Crow America, and making it easier to engage with the listings they contained.
+About a year later Brian Foo, then at NYPL Labs, built [Navigating the Green Book](https://beefoo.github.io/greenbook-map/) as a way of demonstrating the kinds of things that could be done with NYPL's Public Domain release. The interface he built on top of the Green Books is essentially Google Maps, but routed only through Green Book listings -- so you try to create a route between two places, but the only options you have are locations listed in the Green Books, i.e. known safe places for Black travelers to eat or stay at. It puts a modern interface on top of these very specific artifacts of Jim Crow America, and making it easier to engage with the listings they contained.
 
 My small role was helping with data extraction, and in 2015 it was *brutal*. We wanted all 23 volumes; we managed one, plus one that the University of South Carolina had hand-transcribed. Everything else was too much manual work.
 
