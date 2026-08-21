@@ -26,7 +26,10 @@ export default async function(eleventyConfig) {
 			"./public/": "/"
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
-		.addPassthroughCopy("content/blog/**/img/**");
+		.addPassthroughCopy("content/blog/**/img/**")
+		// Plain-text sidecars next to a post (e.g. cleaned talk transcripts) are
+		// served as-is: .txt isn't a template format, so Eleventy won't render it.
+		.addPassthroughCopy("content/blog/**/*.txt");
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
