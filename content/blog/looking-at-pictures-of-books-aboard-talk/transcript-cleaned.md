@@ -1,3 +1,7 @@
+---
+eleventyExcludeFromCollections: true
+---
+
 # Directory Pipeline — a talk at Aboard, July 28, 2026
 
 Cleaned transcript of <https://www.youtube.com/watch?v=_k_1Ci_Jejo>

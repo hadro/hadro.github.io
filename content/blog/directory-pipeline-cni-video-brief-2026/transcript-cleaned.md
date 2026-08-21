@@ -1,3 +1,7 @@
+---
+eleventyExcludeFromCollections: true
+---
+
 # Directory Pipeline — CNI Spring 2026 video brief
 
 Cleaned transcript of <https://www.youtube.com/watch?v=SFvmz0wIwpg>
