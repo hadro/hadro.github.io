@@ -54,6 +54,20 @@
 				{%- endfor %}
 				</ul>
 			</nav>
+
+			{%- if metadata.social %}
+			<nav class="social-nav">
+				<h2 class="visually-hidden">Profiles elsewhere</h2>
+				<ul class="social-links">
+				{%- for entry in metadata.social %}
+					<li><a href="{{ entry.url }}" rel="me" title="{{ entry.name }}">
+						{%- include "icons/" + entry.icon + ".svg" -%}
+						<span class="visually-hidden">{{ entry.name }}</span>
+					</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+			{%- endif %}
 		</header>
 
 		<main id="main">
