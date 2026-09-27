@@ -1,0 +1,49 @@
+/* Footnotes, from markdown-it-footnote */
+.footnote-ref {
+	line-height: 0; /* keep the superscript from pushing lines apart */
+}
+.footnote-ref a,
+.footnote-backref {
+	text-decoration: none;
+}
+.footnote-ref a {
+	padding: 0 0.1em;
+}
+.footnotes {
+	font-size: 0.9375em;
+}
+
+/* Sidenotes, from js/sidenotes.js: copies of the footnotes floated into the
+   right margin, shown only when the screen is wide enough to fit them beside
+   the 38em column. Otherwise the footnotes list at the end is shown. */
+.sidenote {
+	display: none;
+}
+@media (min-width: 78em) {
+	.sidenote {
+		display: block;
+		float: right;
+		clear: right;
+		width: 14rem;
+		margin-right: -16rem; /* width + 2rem gap from the text */
+		font-size: 0.8125rem;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1.5;
+		text-align: left;
+	}
+	.sidenote-part {
+		display: block;
+	}
+	.sidenote-part + .sidenote-part {
+		margin-top: 0.5em;
+	}
+	.sidenote-number {
+		font-weight: 600;
+		margin-right: 0.35em;
+	}
+	.has-sidenotes .footnotes-sep,
+	.has-sidenotes .footnotes {
+		display: none;
+	}
+}

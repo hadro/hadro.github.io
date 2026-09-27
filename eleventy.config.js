@@ -3,6 +3,7 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import markdownItFootnote from "markdown-it-footnote";
 
 import pluginFilters from "./_config/filters.js";
 
@@ -34,8 +35,9 @@ export default async function(eleventyConfig) {
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
-	// Watch CSS files
+	// Watch CSS and JS files
 	eleventyConfig.addWatchTarget("css/**/*.css");
+	eleventyConfig.addWatchTarget("js/**/*.js");
 	// Watch images for the image pipeline.
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
@@ -108,6 +110,17 @@ export default async function(eleventyConfig) {
 		sharpOptions: {
 			animated: true,
 		},
+	});
+
+	// Footnotes: [^1] in Markdown. On wide screens js/sidenotes.js also shows
+	// each one in the margin next to its reference.
+	eleventyConfig.amendLibrary("md", (md) => {
+		md.use(markdownItFootnote);
+		// Plain "1" instead of the default "[1]"
+		md.renderer.rules.footnote_caption = (tokens, idx) => {
+			const { id, subId } = tokens[idx].meta;
+			return subId > 0 ? `${id + 1}:${subId}` : `${id + 1}`;
+		};
 	});
 
 	// Filters

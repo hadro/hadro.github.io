@@ -11,6 +11,8 @@
 	--color-gray-90: #2a2a2a;
 
 	--background-color: #fdfcf9;
+	--figure-background: #f4f2ec;
+	--figure-border: #e6e2d8;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -32,6 +34,8 @@
 		--text-color-link-visited: #b89ec9;
 
 		--background-color: #1a1816;
+		--figure-background: #23201d;
+		--figure-border: #36322d;
 	}
 }
 
@@ -128,13 +132,36 @@ blockquote p {
 	margin: 0.5em 0;
 }
 
+/* Figures: a paragraph holding just an image (optionally linked), or an
+   image followed by its caption, or a video. An image inline with other
+   text, like a license badge, is left alone. The panel reaches past the
+   text column by its padding, so the image itself stays full column width. */
+main p:has(> :is(img, picture):only-child, > a:only-child > :is(img, picture), > :is(img, picture) + em),
+main p:has(> video) {
+	background-color: var(--figure-background);
+	border: 1px solid var(--figure-border);
+	border-radius: 6px;
+	padding: 0.75rem;
+	margin: 2em -0.75rem;
+}
+main p:has(> :is(img, picture):only-child, > a:only-child > :is(img, picture), > :is(img, picture) + em) img,
+main p:has(> video) video {
+	display: block;
+	margin: 0 auto;
+}
+
+/* Captions: *italic text* on the line after an image or video. The image
+   transform wraps PNGs and JPEGs in <picture>, so match that too. */
 main img + em,
+main picture + em,
+main video + em,
+main a:has(> img, > picture) + em,
 main img + p > em:only-child {
 	display: block;
 	font-size: 0.875em;
 	color: var(--color-gray-90);
 	text-align: center;
-	margin-top: 0.4em;
+	margin-top: 0.6em;
 }
 
 a[href] {
