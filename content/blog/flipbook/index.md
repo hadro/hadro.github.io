@@ -15,7 +15,7 @@ tags:
   - human computer interaction
 ---
 
-If you just want to see the fun project, take a look at the Flipbook tool I built:
+TLDR: If you just want to see the fun project, take a look at the Flipbook tool I built:
 - <https://hadro.github.io/flipbook/>
 
 
@@ -51,7 +51,7 @@ So how do you give a user a useful glimpse into what lies within the pages?
 ## A challenge for digital libraries
 
 This has been a digital library struggle for decades. There are various solutions different orgs have come up with, none of them perfect: 
-- You can move the images of the cover to the back of the image order, so while you've still photographed the front and back covers, they don't appear first.[^2]
+- You can just move the images of the cover to the back of the image order, so while you've still photographed the front, it doesn't appear first.[^2]
 - You can choose an arbitrary image and designate it a "cover image." This works, but requires additional code and manual intervention on each item, which is hard to scale. For example, the Internet Archive displays the first image of a book by default, but another page can be set as the "start" page in the metadata.[^3]
 - You can try to programmatically find the first "interesting" page, and display that -- HathiTrust and Google Books display the title page, which is identified programmatically. This works splendidly in a utilitarian way, but it still often undersells the richness of the pages within a volume.
 

@@ -3,6 +3,15 @@
 // `image` is optional and lives in content/img/projects/, referenced relative to content/projects.njk.
 export default [
 	{
+		title: "Flipbook",
+		url: "https://hadro.github.io/flipbook/",
+		year: "2026",
+		image: "./img/projects/flipbook.png",
+		alt: "The Flipbook shelf: book cards from the Library of Congress, Yale, and the Internet Archive, with the Florentine Codex caught mid-flip on an illustrated page",
+		description: "Hover over a digitized book and wiggle your mouse to flip through a sample of its pages, a homage to the animated book thumbnails in Internet Archive search results around 2014. It works with any IIIF manifest, or an item link from the Internet Archive, Library of Congress, NYPL, and others, and can turn any book into a GIF, a short video, or a contact sheet.",
+		post: "/blog/flipbook/"
+	},
+	{
 		title: "The Green Books and other Black travel guides",
 		url: "https://hadro.github.io/green-books/all-volumes",
 		year: "2026",
