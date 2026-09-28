@@ -5,6 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
+
+		{#- Link previews (Bluesky, LinkedIn, Slack, Mastodon, etc.). A page can set
+		`socialImage` (relative to the page, ideally 1200×630) and `socialImageAlt`. #}
+		<meta property="og:site_name" content="{{ metadata.title }}">
+		<meta property="og:title" content="{{ title or metadata.title }}">
+		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:url" content="{{ page.url | htmlBaseUrl(metadata.url) }}">
+		<meta property="og:type" content="{% if tags and 'posts' in tags %}article{% else %}website{% endif %}">
+		{%- if socialImage %}
+		<meta property="og:image" content="{{ socialImage | htmlBaseUrl(metadata.url) }}">
+		{%- if socialImageAlt %}
+		<meta property="og:image:alt" content="{{ socialImageAlt }}">
+		{%- endif %}
+		<meta name="twitter:card" content="summary_large_image">
+		{%- else %}
+		<meta name="twitter:card" content="summary">
+		{%- endif %}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}

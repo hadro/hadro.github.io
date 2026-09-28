@@ -2,6 +2,8 @@
 title: "Looking at Pictures of Books Is Not the Same as Reading a Book: A Talk at the Aboard Offices about the Directory Pipeline"
 date: 2026-08-17
 description: "A write-up of the talk I gave at Aboard's offices on July 28, 2026, about the Directory Pipeline, meta-prompting, two-pass OCR, and why digitized collections deserve better front doors."
+socialImage: img/social-card.jpg
+socialImageAlt: "The Green Book and other travel guide explorer's landing page, headlined \"A directory of places that welcomed Black travelers, 1930–1966,\" beside three sample entries shown as cropped scans from the original pages"
 tags:
   - directory pipeline
   - talks

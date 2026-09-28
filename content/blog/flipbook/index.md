@@ -2,6 +2,8 @@
 title: "How Do You Represent a Book with a Single Image?"
 date: 2026-09-26
 description: "The first page of a digitized book is often its least interesting one. A look at how digital libraries have tried to pick a better thumbnail, and Flipbook, a small tool that revives the Internet Archive's old page-flipping thumbnails for any IIIF manifest."
+socialImage: img/flipbook-social-card.png
+socialImageAlt: "The Flipbook title card: the word \"Flipbook\" in pink and yellow, three illustrated page cards labeled BHL, IA, and NYPL, and the tagline \"Flip through centuries of digitized books. Paste any IIIF manifest. Make GIFs.\""
 tags:
   - flipbook
   - iiif
