@@ -127,6 +127,10 @@ Mauricio wrote up the details of the process if you'd like to read more: <https:
 
 Anyway: [give Flipbook a try](https://hadro.github.io/flipbook/). If you find a book that looks great flipping by, or your institution has its own answer to the thumbnail problem, I'd love to hear about it.
 
+<small> AI disclosure note: I wrote this blog post myself, the old-fashioned way. I used Claude Code to create the [code](https://github.com/hadro/flipbook) for the Flipbook tool and also to help me create the video embedded at the top. </small> 
+
+
+
 [^1]: Lots of libraries had a room dedicated to this process, often called "The Bindery"; when I worked in NYPL Labs there was a brief period where my workspace was in the old Bindery on the ground floor of the Schwarzman Building of the New York Public Library. It was amazing to do digital scholarship experiments in a space rooted in an older process of reshaping and repackaging recorded knowledge.
 
 [^2]: I have first-hand knowledge of two institutions that do this, and I know there are dozens -- maybe hundreds? -- more out there. As I said, we're all doing our best.
