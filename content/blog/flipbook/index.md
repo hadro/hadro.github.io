@@ -64,13 +64,13 @@ This has been a digital library struggle for decades. There are various solution
   ![HathiTrust search results for books about bats, each shown with a small thumbnail of a text-only title page](img/hathitrust.png)
   *HathiTrust: title pages.*
 
-- You can show the cover image, along with a strip of additional images that are meant to give a slightly better view into the work -- the Portal to Texas History does this, as does Northwestern University Libraries, as do many other places.
-
-  ![A Portal to Texas History item page showing a large image of a quilted red scrapbook cover, with four small thumbnails of the following pages beneath it](img/portal-to-texas-history.png)
-  *The Portal to Texas History: the cover, plus the next few pages.*
+- You can show the cover image, along with a strip of additional images that are meant to give a slightly better view into the work -- the Portal to Texas History does this, as do Northwestern University Libraries and Princeton University Library, as do many other places.
 
   ![A Northwestern University Libraries viewer showing the ornate green and gold front cover of Die schöne Müllerin, above a strip of page thumbnails labeled front cover, inside front cover, blank page, blank page, front matter, blank page, frontispiece, blank page](img/northwestern-libraries.png)
   *Northwestern University Libraries: a strip of the pages that follow the cover. Four of the first eight are blank.*
+
+  ![Princeton University Library search results for three items, two Arabic manuscripts and a 1930 Soviet picture book, each showing its cover beside the title, publisher, and date, above a row of six page thumbnails from inside the volume and a count of its files](img/princeton-libraries.png)
+  *Princeton University Library: the cover, plus a row of pages from inside each item, right in the search results. The most elegant version of this I've seen.*
 
 - You can try to identify a useful illustration within the volume, and either use that directly, or pair it with a procedural cover generator that combines illustrations with an algorithm that creates a unique cover for every item. See the ["Fun historical aside"](#fun-historical-aside) section below for the story of how NYPL Labs tried this path.
 - Or, of course, you can focus your energies on other UX issues, and just show the cover, ugly or not, and trust that the combination of metadata and search relevancy will get people to the items they need, regardless of how compelling its thumbnail is. My guess is most digital libraries do this.
