@@ -4,11 +4,19 @@ const eleventyNavigation = {
 	order: 1
 };
 
-const numberOfLatestPostsToShow = 3;
+const numberOfLatestPostsToShow = 8;
+const numberOfLatestProjectsToShow = 4;
 ---
+<h1 class="visually-hidden">{{ metadata.title }}</h1>
+
+<a href="https://hadro.github.io/green-books/all-volumes"><img src="./img/home-map.png" alt="Map of Manhattan and Brooklyn turned so north is to the left, with circles counting Green Book listings in each neighborhood: 779 in Harlem, 260 in Midtown West, then down through Greenwich Village and the Financial District and across the East River to 196 in Bedford-Stuyvesant" class="home-photo" loading="eager"></a>
+<em>NYC-area entries from <a href="https://hadro.github.io/green-books/all-volumes">The Green Books and other Black travel guides</a>, Harlem to Bed-Stuy, north to the left. Map © OpenStreetMap contributors, © CARTO; boundaries: chriswhong, CC BY-SA 4.0.</em>
+
+<div class="home-columns">
+<section>
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h2>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
@@ -18,12 +26,28 @@ const numberOfLatestPostsToShow = 3;
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
 {% endif %}
+</section>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
+<section>
+<h2>Recent Projects</h2>
+
+<ul class="projectlist projectlist-grid">
+{%- for project in projects | head(numberOfLatestProjectsToShow) %}
+	<li class="projectlist-item">
+		{%- if project.image %}
+		<a href="{{ project.url }}" tabindex="-1" aria-hidden="true" class="projectlist-thumb">
+			<img src="{{ project.image }}" alt="{{ project.alt }}">
+		</a>
+		{%- endif %}
+		<a href="{{ project.url }}" class="projectlist-link">{{ project.title }}</a>
+		{%- if project.year %}<span class="projectlist-year">{{ project.year }}</span>{% endif %}
+	</li>
+{%- endfor %}
 </ul>
-#}
+
+{% set moreProjects = projects.length - numberOfLatestProjectsToShow %}
+{% if moreProjects > 0 %}
+<p>{{ moreProjects }} more project{% if moreProjects != 1 %}s{% endif %} on <a href="projects.njk">the projects page</a>.</p>
+{% endif %}
+</section>
+</div>

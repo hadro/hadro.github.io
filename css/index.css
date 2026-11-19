@@ -161,7 +161,9 @@ main img + p > em:only-child {
 	font-size: 0.875em;
 	color: var(--color-gray-90);
 	text-align: center;
-	margin-top: 0.6em;
+	/* Keep caption lines about as long as the text column inside wide panels */
+	max-width: 40rem;
+	margin: 0.6em auto 0;
 }
 
 a[href] {
@@ -436,3 +438,51 @@ header {
 	margin: .25em 0 0;
 }
 
+/* Home page: compact two-up grid, one column on phones */
+.projectlist-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+	gap: 1.5em;
+}
+.projectlist-grid .projectlist-item {
+	margin-bottom: 0;
+}
+.projectlist-grid .projectlist-link {
+	font-size: 1em;
+}
+
+/* Home page map strip */
+.home-photo {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 1;
+	object-fit: cover;
+	border-radius: 6px;
+}
+/* Phones: a taller crop of the same image trims its empty edges, so the
+   bubbles read about 1.5x larger with Harlem to Bed-Stuy still in frame */
+@media (max-width: 36em) {
+	.home-photo {
+		aspect-ratio: 8 / 3;
+	}
+}
+
+/* Home page posts + projects. Only the home page widens past the 38em
+   reading column; post pages need that column for their sidenotes. */
+.home-columns {
+	display: grid;
+	gap: 2.5em 3em;
+	margin-top: 2em;
+}
+@media (min-width: 56em) {
+	body:has(.home-columns) {
+		max-width: 62em;
+	}
+	.home-columns {
+		grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+	}
+	.home-columns .projectlist-grid {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.25em 1em;
+	}
+}
