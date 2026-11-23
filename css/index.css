@@ -2,6 +2,11 @@
 :root {
 	--font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+
+	/* Width of figures, code, and embeds that break out of the 38em text
+	   column: 0.75rem past the text on phones, growing to 72rem on wide
+	   screens with a 2rem gutter. 100% resolves where it's used. */
+	--breakout-width: max(100% + 1.5rem, min(72rem, 100vw - 4rem));
 }
 
 /* Theme colors */
@@ -134,20 +139,32 @@ blockquote p {
 
 /* Figures: a paragraph holding just an image (optionally linked), or an
    image followed by its caption, or a video. An image inline with other
-   text, like a license badge, is left alone. The panel reaches past the
-   text column by its padding, so the image itself stays full column width. */
+   text, like a license badge, is left alone. The panel breaks out of the
+   text column to --breakout-width, centered on it, and starts below any
+   sidenote in the right margin. */
 main p:has(> :is(img, picture):only-child, > a:only-child > :is(img, picture), > :is(img, picture) + em),
 main p:has(> video) {
 	background-color: var(--figure-background);
 	border: 1px solid var(--figure-border);
 	border-radius: 6px;
 	padding: 0.75rem;
-	margin: 2em -0.75rem;
+	margin-block: 2em;
+	width: var(--breakout-width);
+	margin-left: calc((100% - var(--breakout-width)) / 2);
+	clear: right;
 }
 main p:has(> :is(img, picture):only-child, > a:only-child > :is(img, picture), > :is(img, picture) + em) img,
 main p:has(> video) video {
 	display: block;
 	margin: 0 auto;
+	/* Tall screenshots shrink to fit the screen instead of growing with the panel */
+	max-height: 90vh;
+	object-fit: contain;
+}
+/* In a list item, 100% is the item, which sits the default 40px list indent
+   right of the text column; shift back half of it to center on the column. */
+main li > p:has(> :is(img, picture):only-child, > a:only-child > :is(img, picture), > :is(img, picture) + em) {
+	margin-left: calc((100% - var(--breakout-width) - 40px) / 2);
 }
 
 /* Captions: *italic text* on the line after an image or video. The image
@@ -252,6 +269,17 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
+}
+
+/* Code blocks and video embeds break out like figures. The two pre
+   selectors outrank Prism's pre[class*="language-"] margin. */
+main pre[class*="language-"],
+main pre:not([class*="language-"]),
+main iframe {
+	display: block;
+	width: var(--breakout-width);
+	margin-left: calc((100% - var(--breakout-width)) / 2);
+	clear: right;
 }
 
 /* Header */
